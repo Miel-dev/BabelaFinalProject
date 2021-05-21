@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;  color: #ffff;   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+}
+body{ width: 100%; 
+background-color: rgb(48, 41, 41);
+}
+
+#main, header, footer{
+    width:95%;  margin: 15px auto;      
+}
+header, footer, .body, .Sidebar, article, section{
+    height: auto;
+    background-color: rgb(0, 81, 255);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.sidebarfeat{
+    height: auto;
+}
+.Title{
+    height: auto;
+}
+.fonters{
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer{
+    height: 100px;
+}
+
+.grid-container, .grid-container3, .grid-container3a{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: auto auto auto auto auto ;
+    grid-gap: 25px;
+    
+    
+}
+.grid-container{
+    margin: auto;
+    width: 60%;
+    
+    padding: 10px;
+}
+.grid-container>.col-1{    
+    height: auto;
+
+}
+.navis, .navis:active{
+    text-decoration: none;
+    color: #424949;
+    display: inline-block;
+   height: 150%;
+    background-color:chocolate;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+}
+.navis:hover{
+    color:cornsilk;
+    background-color:brown
+}
+.grid-container3{
+    grid-template-columns: auto 76.8%  ;
+    margin-top: 8pt;
+    
+}
+.grid-container3a{    
+    grid-template-columns: auto auto;
+    margin:auto;
+    text-align: center;
+}
+
+.grid-container3a>.bodysec{
+    height: 300px;
+    background-color: rgba(87, 44, 30, 0.664);
+}
+.body, .Sidebar{
+    height: auto;
+}
+.sidebarfeat{
+    height: auto;
+    width: 95%;
+    margin: auto;
+    background-color: rgba(87, 44, 30, 0.664);
+    padding: 15px;
+    border-style: double;
+    border-color: black;
+    border-width: 7.5pt;
+}
+.ako{
+    width: 70%;
+    height: 70%;
+}
+
+@media screen and (max-width:1024px){  /*Small Laptop Screen */
+    body{
+        background-color: rgb(48, 41, 41);
+    
+    }
+    .grid-container{    
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        
+    } 
+    .grid-container3a{
+        font-size: 10pt;  
+        grid-template-columns: 100%;
+    }
+}
+.ako{
+    width: 70%;
+    height: 70%;
+}
+@media screen and (max-width:768px){     /*Tablet Screen */
+    body{
+        background-color: rgb(48, 41, 41);
+    }
+    header{
+        height: auto;
+    }
+    .grid-container{    
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        
+    } 
+    .grid-container3{
+        grid-template-columns: 100%;
+        
+    }
+    .grid-container3a{
+        grid-template-columns: 30% 66%;
+        font-size: 12pt;
+    }
+    .reevesfont{
+        font-size: 10pt;
+    }
+    
+}
+@media screen and (max-width:480px){     /*Small Phone Screen */
+    body{
+        background-color: rgb(48, 41, 41);
+    }
+    header{
+        height: auto;
+    }
+    .fonters{
+        font-size: 25pt;
+    }
+    .grid-container{    
+        margin: auto;
+        grid-template-columns: 100%;
+        text-align: center;
+        
+    }
+    .grid-container3{
+        grid-template-columns: 100%;
+        height: auto;
+    }
+    .grid-container3a{
+        grid-template-columns: 100%;
+        height: auto;
+        font-size: auto;
+    }
+}

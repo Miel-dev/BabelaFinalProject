@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <meta charset="utf-8"> 
+        <meta name="author" content="I.Babela" >
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" 
+              type="text/css" 
+              href="..\styles\registration.css">
+    </head>
+    <body>
+        <div id="main">
+            <header class="Title">
+                <div class="fonters"><a id="top"></a>
+                <b>Gallery</b></div>
+                <div class="wrapper grid-container">
+                    <section class="col-1 col1">
+                        <a class="navis" href="..\index.html"> Home</a>
+                      </section>
+                      <section class="col-1 col2">
+                         <a class="navis" href="gallery.html"> Gallery</a>
+                      </section>
+                      <section class="col-1 col3">
+                         <a class="navis"> Registration</a>
+                      </section>
+                      <section class="col-1 col3">
+                         <a class="navis" href="aboutme.html" > About Me</a> 
+                      </section>
+                      <section class="col-1 col3">
+                         <a class="navis" href="reference.html"> Reference</a>
+                      </section>
+                </div>
+            </header>
+
+       
+
+            <div class="grid-container3">
+                
+                
+                 
+                <section class="body">
+                    
+                        <div class="grid-container3a">
+                            <article class="bodysec">
+                                <form>
+                                    <table>
+                                        <tr>
+                                            <td><label for="fname">First name</label></td>
+                                            <td><input type="text" id="fname" size="50" required></td>   
+                                        </tr>
+                                        <tr>
+                                            <td><label>Phone Number</label></td>
+                                            <td><input type="text" size="50" required placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td>   
+                                        </tr>
+                                        <tr>
+                                            <td><label>Mobile Phone Number</label></td>
+                                            <td><input type="text" size="50" required placeholder="+63x-xxxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td>   
+                                        </tr>
+                                        <tr>
+                                            <td><label for="pwd">Password</label></td>
+                                            <td><input type="password" id="pwd" size="25" maxlength="15" minlength="8" required></td>   
+                                        </tr>
+                                        <tr>
+                                            <td><label for="bday">Birthday</label></td>
+                                            <td><input type="date" id="bday" min="2000-01-01" max="2020-01-01" required></td>   
+                                        </tr>
+                                        <tr>
+                                            <td><label for="gender">Gender</label></td>
+                                            <td><select id="gender" name="gender">
+                                                <option value="Female">Female</option>
+                                                <option value="Male">Male</option>
+                                            </td>   
+                                        </tr>
+    
+                                        
+                                        <tr>
+                                            <td colspan-"2">
+                                                <input type="submit" value="Submit">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </article>
+                        </div>
+                </section>
+               
+            </div>
+
+           
+            <footer>
+                <a href="#top">Return to Top</a>
+            </footer>
+        </div>
+    </body>
+    </html>
